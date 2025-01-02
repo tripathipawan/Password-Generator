@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password genrator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h2> GENERATE A <br> <span>RANDOM PASSWORD</span></h2>
+        <div class="inputbox">
+            <input type="text" id="Passwordbox" placeholder="Password" class="Passwordbox" readonly>
+            <span id="copyicon"><i class="fa-solid fa-copy"></i></span>
+        </div>
+
+        <div class="lengthrow">
+            <p>Password Length</p>
+            <span id="rangevalue"></span>
+        </div>
+
+        <input type="range" id="rangeinput" min="4" max="18" value="6">
+
+        <div class="row">
+            <input type="checkbox" name="Uppercase" id="Uppercase" checked>
+            <label for="Uppercase" class="includelable">Include uppercase letters (A-Z)</label>
+        </div>
+
+        <div class="row">
+            <input type="checkbox" id="Lowercase" name="Lowercase" checked>
+            <label for="Lowercase" class="includelable">Include lowercase letters (a-z)</label>
+        </div>
+
+        <div class="row">
+            <input type="checkbox" id="Symbols" name="Symbols" checked>
+            <label for="Symbols" class="includelable">Include Symbols (@!*^)</label>
+        </div>
+
+        <div class="row">
+            <input type="checkbox" id="Numbers" name="Symbols" checked>
+            <label for="Numbers" class="includelable">Include Numbers(0-9)</label>
+        </div>
+
+        <button class="genbtn" id="genbtn" type="button" id="genbtn">
+            <span class="electric"><i class="fa-solid fa-bolt"></i></span>GENERATE PASSWORD
+        </button>
+
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>
